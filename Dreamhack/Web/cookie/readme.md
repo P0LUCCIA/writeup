@@ -60,3 +60,16 @@
         + `wrong password`를 alert로 return
         
     `username` 값이 `users` dict에 없을 경우 `not found user`를 alert로 return
+
+
+## 웹 분석
+
+- `guest`로 로그인시 얻는 쿠키
+
+  ![guest](https://raw.githubusercontent.com/M00nHeeSung/writeup/main/Dreamhack/Web/cookie/image/guest.png)
+
+  다음과 같이 `username`이 쿠키가 guest로 되어있음
+  
+## 공격
+
+- `username` 쿠키 값을 `admin`으로 변경
