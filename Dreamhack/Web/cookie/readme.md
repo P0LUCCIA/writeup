@@ -47,12 +47,16 @@
     
     `username` 값이 `users` dict에 있을 경우 value 값을 불러옴
       
-      value 값이 POST 메서드를 통해 받은 `password` 값과 비교한다
+      + value 값이 POST 메서드를 통해 받은 `password` 값과 비교한다
       
-        참일 경우 `username` cookie에 username을 넣음
-        이후 `/` 리다이렉트
+      + 참일 경우 
         
-        거짓일 경우 `wrong password`를 alert로 return
+        + `username` cookie에 username을 넣음
+        
+        + 이후 `/` 리다이렉트
+        
+      + 거짓일 경우 
+        
+        + `wrong password`를 alert로 return
         
     `username` 값이 `users` dict에 없을 경우 `not found user`를 alert로 return
-       
