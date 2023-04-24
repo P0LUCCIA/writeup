@@ -13,12 +13,13 @@
             return render_template('index.html', text=f'Hello {username}, {"flag is " + FLAG if username == "admin" else "you are not admin"}')
         return render_template('index.html')
     ```
+  - 코드 분석
+  
+    username 쿠키가 `admin`인 경우 `FLAG`를 출력
+    
+    username 쿠키가 `admin`이 아닐경우 `you are not admin` 출력
 
-  - 코드 순서도
-
-    ![index](/Dreamhack/Web/cookie/image/index.png)
-
-- `/login' 접근
+- `/login` 접근
   - `/login` 접근시 실행되는 코드
 
   ```python3
@@ -40,4 +41,18 @@
           return '<script>alert("wrong password");history.go(-1);</script>'
   ```
 
-  - 코드 순서도
+  - 코드 분석
+    
+    POST 메서드를 통하여 `username`과 `password`를 받음
+    
+    `username` 값이 `users` dict에 있을 경우 value 값을 불러옴
+      
+      value 값이 POST 메서드를 통해 받은 `password` 값과 비교한다
+      
+        참일 경우 `username` cookie에 username을 넣음
+        이후 `/` 리다이렉트
+        
+        거짓일 경우 `wrong password`를 alert로 return
+        
+    `username` 값이 `users` dict에 없을 경우 `not found user`를 alert로 return
+       
