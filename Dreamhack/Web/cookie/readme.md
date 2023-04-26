@@ -77,5 +77,3 @@
   ![admin](https://raw.githubusercontent.com/M00nHeeSung/writeup/main/Dreamhack/Web/cookie/image/admin.png)
 
   `username` 쿠키 값이 `admin`일 경우 FLAG를 위와 같이 출력하는 것을 알 수 있음
-  
-## 공격 코드
