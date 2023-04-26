@@ -2,7 +2,7 @@
 
 ## 소스코드 분석
 
-- `/` 접근
+- `@app.route('/')`
   - `/` 접근시 사용되는 코드
 
     ```python3
@@ -19,7 +19,7 @@
     
     username 쿠키가 `admin`이 아닐경우 `you are not admin` 출력
 
-- `/login` 접근
+- `@app.route('/login', methods=['GET', 'POST'])` 접근
   - `/login` 접근시 실행되는 코드
 
   ```python3
