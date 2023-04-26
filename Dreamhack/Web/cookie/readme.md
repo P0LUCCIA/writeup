@@ -68,7 +68,9 @@
 
   ![guest](https://raw.githubusercontent.com/M00nHeeSung/writeup/main/Dreamhack/Web/cookie/image/guest.png)
 
-  다음과 같이 `username`이 쿠키가 guest로 되어있음
+  다음과 같이 `username`이 쿠키가 guest로 되어있다.
+  
+  이를 통하여 `username`이 admin일 경우 공격이 가능하다고 다시 한번 확인 할 수 있었음.
   
 ## 공격
 
@@ -76,4 +78,4 @@
 
   ![admin](https://raw.githubusercontent.com/M00nHeeSung/writeup/main/Dreamhack/Web/cookie/image/admin.png)
 
-  `username` 쿠키 값이 `admin`일 경우 FLAG를 위와 같이 출력하는 것을 알 수 있음
+  `username` 쿠키 값이 `admin`일 경우 FLAG를 위와 같이 출력하는 것을 알 수 있다.
