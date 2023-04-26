@@ -3,7 +3,7 @@
 ## 소스코드 분석
 
 - `@app.route('/')`
-  - `/` 접근시 사용되는 코드
+  - 코드
 
     ```python3
     @app.route('/')
@@ -13,14 +13,14 @@
             return render_template('index.html', text=f'Hello {username}, {"flag is " + FLAG if username == "admin" else "you are not admin"}')
         return render_template('index.html')
     ```
-  - 코드 분석
+  - 분석
   
     username 쿠키가 `admin`인 경우 `FLAG`를 출력
     
     username 쿠키가 `admin`이 아닐경우 `you are not admin` 출력
 
 - `@app.route('/login', methods=['GET', 'POST'])`
-  - `/login` 접근시 실행되는 코드
+  - 코드
 
   ```python3
   @app.route('/login', methods=['GET', 'POST'])
@@ -41,7 +41,7 @@
           return '<script>alert("wrong password");history.go(-1);</script>'
   ```
 
-  - 코드 분석
+  - 분석
     
     POST 메서드를 통하여 `username`과 `password`를 받음
     
