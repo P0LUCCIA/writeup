@@ -1,11 +1,7 @@
 from requests import get
-from bs4 import BeautifulSoup
 
 url ="https://los.rubiya.kr/chall/orc_60e5b360f95c1f9688e4f3a86c5dd494.php"
-
-cookie = {
-    "PHPSESSID":"c0bed5cfkoofgp0l3nfhdr2c89"
-}
+cookie = {"PHPSESSID":"c0bed5cfkoofgp0l3nfhdr2c89"}
 i = 0
 while True:
     params = {
